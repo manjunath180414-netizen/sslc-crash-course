@@ -1,1 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSLC 2026 Free Crash Course | HIS Academy</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root{--red:#e10600}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#050505;color:#fff}
+
+section{max-width:1200px;margin:auto;padding:80px 20px 220px}
+
+h1{font-size:clamp(40px,6vw,80px);font-weight:900}
+h2{font-size:clamp(24px,4vw,36px);margin:40px 0 20px}
+p{line-height:1.7}
+.red{color:var(--red)}
+
+.divider{
+  height:1px;
+  background:linear-gradient(to right,transparent,var(--red),transparent);
+  margin:60px 0;
+}
+
+/* BRAND */
+.brand-card{
+  background:linear-gradient(135deg,#e10600,#7a0000);
+  border-radius:28px;
+  padding:36px;
+  box-shadow:0 0 70px rgba(225,6,0,.5);
+  margin-bottom:50px;
+}
+
+/* COURSE CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:24px;
+}
+.card{
+  background:#0d0d0d;
+  border:1px solid rgba(225,6,0,.3);
+  border-radius:22px;
+  padding:26px;
+  box-shadow:0 0 35px rgba(225,6,0,.2);
+}
+
+/* BUTTON */
+.btn{
+  display:block;
+  width:100%;
+  max-width:420px;
+  margin:16px 0;
+  padding:16px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#e10600,#7a0000);
+  color:#fff;
+  font-weight:800;
+  text-align:center;
+  text-decoration:none;
+  border:none;
+  cursor:pointer;
+  box-shadow:0 0 45px rgba(225,6,0,.6);
+}
+.btn.disabled{opacity:.45}
+
+/* FORM */
+.form-wrap{position:relative;max-width:520px}
+input,select{
+  width:100%;
+  padding:16px;
+  margin:12px 0;
+  background:#111;
+  border:1px solid rgba(225,6,0,.3);
+  border-radius:12px;
+  color:#fff;
+}
+.lock{position:absolute;inset:0;z-index:5}
+
+/* INFO */
+.notice{
+  margin-top:16px;
+  padding:14px;
+  border-radius:14px;
+  background:#1a0000;
+  border:1px solid rgba(225,6,0,.6);
+}
+.loader{margin-top:20px;font-weight:600}
+.success{
+  margin-top:40px;
+  padding:28px;
+  border-radius:24px;
+  background:#0f0f0f;
+  border:1px solid rgba(225,6,0,.6);
+}
+.hidden{display:none}
+
+/* FOOTER */
+.site-footer{
+  background:#070707;
+  border-top:1px solid rgba(225,6,0,.25);
+  padding:30px 20px;
+  margin-top:80px;
+}
+
+.footer-inner{
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+  font-size:14px;
+  line-height:1.8;
+  color:#ccc;
+}
+
+.site-footer a{
+  color:#ff3b3b;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.site-footer a:hover{
+  text-decoration:underline;
+}
+
+.site-footer .dev{
+  opacity:.8;
+  font-size:13px;
+}
+
+</style>
+</head>
+
+<body>
+
+<section>
+
+<div class="brand-card">
+  <h2>HIS Academy</h2>
+  <p>SSLC 2026 FREE Crash Course • Exam-Focused • Result-Driven</p>
+</div>
+
+<h1><span class="red">SSLC</span> CRASH COURSE 2026</h1>
+
+<div class="divider"></div>
+
+<h2>What You Will Learn</h2>
+<div class="grid">
+  <div class="card">Complete SSLC syllabus – exam-oriented</div>
+  <div class="card">Important questions & repeated patterns</div>
+  <div class="card">Chapter-wise revision with clarity</div>
+  <div class="card">Model papers & previous year analysis</div>
+  <div class="card">Smart shortcuts & scoring techniques</div>
+  <div class="card">Final exam strategy & time management</div>
+</div>
+
+<div class="divider"></div>
+
+<h2>To Get This Course for <span class="red">FREE</span></h2>
+
+<a id="instaBtn" class="btn" href="https://www.instagram.com/_hisacademy" target="_blank">
+STEP 1: Follow on Instagram
+</a>
+
+<a id="ytBtn" class="btn disabled" href="https://youtube.com/@hisacademy-i4y" target="_blank">
+STEP 2: Subscribe on YouTube
+</a>
+
+<h2 style="margin-top:50px">Free Registration</h2>
+
+<div class="form-wrap">
+  <div id="lock" class="lock"></div>
+
+  <form id="regForm">
+    <input id="nameInput" placeholder="Student Name" required>
+    <input id="phoneInput" placeholder="Mobile Number" required>
+    <select id="mediumInput" required>
+      <option value="">Select Medium</option>
+      <option>English</option>
+      <option>Kannada</option>
+    </select>
+    <input id="districtInput" placeholder="District" required>
+    <button id="submitBtn" class="btn disabled">LOCKED</button>
+  </form>
+</div>
+
+<div id="notice" class="notice">
+⚠️ Please follow on Instagram and subscribe on YouTube to unlock registration.
+</div>
+
+<div id="loader" class="loader hidden">Please wait… submitting your details</div>
+
+<div id="success" class="success hidden">
+  <h2 class="red">Registration Successful</h2>
+
+  <a id="whatsappSend" class="btn" target="_blank">Send Details to WhatsApp</a>
+
+  <h3 style="margin-top:30px">Refer 10 Friends</h3>
+  <input id="refLink" readonly>
+
+  <a id="refWhatsApp" class="btn" target="_blank">
+    Share Referral Link on WhatsApp
+  </a>
+</div>
+
+</section>
+
+<script>
+let instaDone=false, ytDone=false;
+
+const instaBtn=document.getElementById("instaBtn");
+const ytBtn=document.getElementById("ytBtn");
+const lock=document.getElementById("lock");
+const submitBtn=document.getElementById("submitBtn");
+const notice=document.getElementById("notice");
+const loader=document.getElementById("loader");
+const success=document.getElementById("success");
+
+instaBtn.onclick=()=>{
+  instaDone=true;
+  ytBtn.classList.remove("disabled");
+};
+
+ytBtn.onclick=()=>{
+  ytDone=true;
+  if(instaDone){
+    lock.remove();
+    submitBtn.classList.remove("disabled");
+    submitBtn.textContent="Register for FREE";
+    notice.style.display="none";
+  }
+};
+
+document.getElementById("regForm").addEventListener("submit",async(e)=>{
+  e.preventDefault();
+  loader.classList.remove("hidden");
+
+  const name=document.getElementById("nameInput").value.trim();
+  const phone=document.getElementById("phoneInput").value.trim();
+  const medium=document.getElementById("mediumInput").value;
+  const district=document.getElementById("districtInput").value.trim();
+
+  try{
+    await fetch(
+      "https://script.google.com/macros/s/AKfycby9N1OA95UjVMjOH8Fq6TS4H2itHiXUnTuRE3NmZs2l8FVcyq6bV5lrf4apuhrbGOZDDw/exec",
+      {
+        method:"POST",
+        body:JSON.stringify({name,phone,medium,district})
+      }
+    );
+  }catch(err){
+    console.error(err);
+  }finally{
+    loader.classList.add("hidden");
+    success.classList.remove("hidden");
+
+    const msg=encodeURIComponent(
+`Hello HIS Academy,
+I have registered for the SSLC 2026 FREE Crash Course.
+
+Name: ${name}
+Phone: ${phone}
+Medium: ${medium}
+District: ${district}`
+    );
+
+    document.getElementById("whatsappSend").href=
+      `https://wa.me/916366031418?text=${msg}`;
+
+    const ref=Math.random().toString(36).substring(2,8).toUpperCase();
+    const link=window.location.origin+window.location.pathname+"?ref="+ref;
+    document.getElementById("refLink").value=link;
+
+    document.getElementById("refWhatsApp").href=
+      `https://wa.me/?text=${encodeURIComponent("Join the SSLC 2026 FREE Crash Course: "+link)}`;
+
+    e.target.reset();
+  }
+});
+</script>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>
+      📞 Contact us:
+      <a href="tel:6366031418">6366031418</a>
+    </p>
+
+    <p>
+      © <span id="year"></span> HIS Academy. All rights reserved.
+    </p>
+
+    <p class="dev">
+      Developed by <strong>Go Spark Media</strong>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
